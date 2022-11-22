@@ -37,7 +37,7 @@ export default function Details ({product}) {
     
                  <div className="flex flex-col items-center justify-center md:grid md:grid-cols-2  md:items-center md:justify-items-center min-h-screen">
                   
-                        <Image src={product.image} alt={product.name} className="hidden md:block" priority width={400} height={400}/>
+                        <Image src={product.image} alt={product.name} className="" priority width={400} height={400}/>
                         <div className="text-center mr-10">
                             <div className="text-3xl font-bold mb-4">{product.name}</div>
                             <div className="text-3xl mb-4 text-slate-900 mt-4">{product.description}</div>

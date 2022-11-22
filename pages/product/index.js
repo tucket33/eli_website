@@ -21,7 +21,7 @@ const Products = ({products})=> {
   <div className="flex flex-col justify-center items-start gap-4  md:grid md:grid-cols-2">
            {products.map(product=>(
               <div className=" flex items-center justify-even  p-4 mx-6 " key={product.id}>
-                <Image src={product.image} className="hidden md:block" alt={product.name} priority width={200} height={200}/>
+                <Image src={product.image} className="" alt={product.name} priority width={200} height={200}/>
 
                 <div className=" pl-4  ">
                 <Link href={`/product/${product.id}`}> <p className="text-2xl font-bold font-heebo mr-2 mb-2"> {product.name} </p></Link>

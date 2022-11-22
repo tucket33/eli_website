@@ -31,7 +31,7 @@ const NavBar = () => {
         </div>
         <ul className="hidden font-bold text-zinc-900 text-2xl md:flex justify-end items-center space-x-8 mr-8 w-full">
                 <li> <Link href="/"> <p >Inicio</p></Link></li>
-                <li onMouseEnter={showDropDown}  onMouseLeave={hideDropDown} className="big-dropdown-header  hover:border-b-dgray hover:cursor-pointer">Productos
+                <li onMouseEnter={showDropDown} onClick={showDropDown} onMouseLeave={hideDropDown} className="big-dropdown-header  hover:border-b-dgray hover:cursor-pointer">Productos
                    
                           <DropDownMenu isActive={isActive} showDropDown={showDropDown} />
                      

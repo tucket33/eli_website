@@ -8,7 +8,7 @@ const Result = ()=>{
 }
 
 
-const ContactComp = (props) => {
+const ContactComp = () => {
     const [result, showResult] = useState(false)
     const form = useRef();
 

@@ -2,7 +2,7 @@ import React from "react";
 import Head from 'next/head'
 import Link from "next/link";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter, faFontAwesome, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import ContactComp from "../components/ContactComp";
 
 
@@ -28,7 +28,7 @@ const contact = () => {
                       <ul className=" font-bold text-xl text-center">
                         <li><i className="px-4  fa-solid fa-location-dot"></i> Direccion: Calle 10 #14-60 Local 25, Cali, Colombia</li>
                         <li><i className="px-4 fa-solid fa-phone"></i>Telefono: +57 317-654-5128</li>
-                        <li><i className="px-4 fa-solid fa-paper-plane"></i>Email: handsupport@gmail.com</li>
+                        <li><i className="px-4 fa-solid fa-paper-plane"></i>Email: handsuport@gmail.com</li>
                       </ul>
                       <ul className="flex  justify-around w-full items-start ">
                     

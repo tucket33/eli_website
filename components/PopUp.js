@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 
-const PopUp = ({popUp,setPopUp}) => {
+const PopUp = ({popUp}) => {
   return (
   
         <div className="border-2 border-cyan-600">

@@ -26,7 +26,8 @@ const Products = ({products})=> {
                 <div className=" pl-4  ">
                 <Link href={`/product/${product.id}`}> <p className="text-2xl font-bold font-heebo mr-2 mb-2"> {product.name} </p></Link>
                 <p className="font-poppins ml-4 text-xl">{product.description}</p>
-                <p className="font-poppins ml-4">{product.availability}</p>
+                <p className="text-xl font-poppins ml-4" style={product.availability === "Disponible"?  {color: 'green'} : {color:'red'}}>{product.availability}</p>
+
                 </div>
 
               </div>

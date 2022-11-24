@@ -12,7 +12,7 @@ const DropDownMenu = ({isActive,showDropDown}) => {
         
                     {isActive ? 
                         (<ul className="z-90 absolute bg-slate-100 text-slate-900 py-4 shadow-xl rounded-md font-girl " onMouseEnter={showDropDown}>
-                                <li className="hover:bg-slate-800 hover:text-white"> <Link href="/product/accs">Acesorios</Link> </li>
+                                <li className="hover:bg-slate-800 hover:text-white"> <Link href="/product/accs">Accesorios</Link> </li>
                                 <li className="hover:bg-slate-800 hover:text-white px-2"> <Link href="/product/dispensers">Dispensadores/Surtidores</Link> </li>
                                 <li className="hover:bg-slate-800 hover:text-white"> <Link href="/product/otros">Otros Productos</Link> </li>
                         </ul>) : null

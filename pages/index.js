@@ -11,6 +11,7 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <meta name="keywords" content="bombas, dispensadores, surtidores, mangueras,equalizadores,nozzles"/>
                 <meta name="description" content="productos para estaciones de servicio"/>
+                {/* <link rel="stylesheet" href="/favicon/favicon.ico" /> */}
               <title>Hands Support | Home</title>
             </Head>
           <Hero />

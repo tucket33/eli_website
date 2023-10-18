@@ -1,16 +1,11 @@
 import React from "react";
 import Image from "next/image";
 
-import { products} from "../../lib/products";
+import { products,getAllIds} from "../../lib/products";
 //
 
 export const getStaticPaths = async () =>{
-    const paths = products.map(p=>(
-           { params: {
-                id: p.id.toString()
-            }}
-        
-        ))
+    const paths = getAllIds()
 
     return {
         paths,
@@ -19,19 +14,16 @@ export const getStaticPaths = async () =>{
 }
 // fetch each slug from url
 export const getStaticProps = async ({params}) =>{
-    const product = products.filter(p=>
-        p.id.toString() === params.id)
-     
+    const product = params.id
     return {
         props: {
-         product: product[0]
+         product: product
         }
     }
 
 }
 
 export default function Details ({product}) {
-   console.log(process.env.NEXT_PUBLIC_API_PUBLIC_KEY);
 
     return ( 
     
@@ -51,3 +43,27 @@ export default function Details ({product}) {
     
     
 
+//   export const getStaticPaths = async () =>{
+//     const paths = products.map(p=>(
+//            { params: {
+//                 id: p.id.toString()
+//             }}
+        
+//         ))
+
+//     return {
+//         paths,
+//         fallback: false
+//     }
+// }
+// export const getStaticProps = async ({params}) =>{
+//     const product = products.filter(p=>
+//         p.id.toString() === params.id)
+     
+//     return {
+//         props: {
+//          product: product[0]
+//         }
+//     }
+
+// }

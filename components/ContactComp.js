@@ -11,7 +11,6 @@ const Result = ()=>{
 const ContactComp = () => {
     const [result, showResult] = useState(false)
     const form = useRef();
-
     const sendEmail = (e) => {
       e.preventDefault();
   
